@@ -1,0 +1,16 @@
+{
+  "name": "apex",
+  "description": "",
+  "profile": "",
+  "runtime": "nodejs6.10",
+  "memory": 128,
+  "timeout": 10,
+  "handler": "lib.default",
+  "role": "",
+  "hooks": {
+    "build": "../../node_modules/.bin/webpack --config ../../webpack.config.babel.js --bail",
+    "clean": "rm -fr lib"
+  },
+  "nameTemplate": "{{.Project.Name}}_{{.Function.Name}}_dev",
+  "environment": {}
+}

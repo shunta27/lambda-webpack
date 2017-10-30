@@ -1,0 +1,5 @@
+{
+    "description": "sample function",
+    "timeout": 30,
+    "environment": {}
+}
